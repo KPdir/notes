@@ -85,11 +85,11 @@ text:
     related_posts:  'Related Posts'
   index:
     coming_soon: 'Coming soon...'
-  #contact:
-  #  email:    'Email Address'
-  #  content:  'What would you like to say?'
-  #  subject:  'New submission!'
-  #  submit:   'Say Hello'
+  contact:
+    email:    'Email Address'
+    content:  'What would you like to say?'
+    subject:  'New submission!'
+    submit:   'Say Hello'
     ajax:
       sending:  'sending..'
       sent:     'Message sent!'
