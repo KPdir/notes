@@ -51,25 +51,40 @@ For more info on other components [look here][mapr_spark_article]
 
 - Preferably the driver and wokkers are on the same LAN. If want to run remotely, open an RPC to driver and have it submit operations from nearby. 
 
-#### 
+#### Spark vs Pandas, Hadoop and Dask
+
+Pandas:
+- Tabular data
+- Single Machine
+
+Hadoop:
+- HDFS storage system
+- MapReduce compute model
+- Spark is in memory vs Hadoop-Mapreduce is from Disk.
+
+Dask:
+- Python parallel computers
+- 1- 1000 node cluster
+- Part of Python Ecosystem
 
 
+#### PySpark
+A wrapper aroudn Spark Core. Uses PY4J to launch a JVM and creates a Java SparkContext. 
 
+#### Partitions
+How data is physically distributed between different machines during execution. 
 
+#### Transformations
+Instructions to modify teh dataframe. They are immutable. Spark does not act on Transformations until we perform an Action. Spark builds a plan for Transformations but does not execute - Lazy evaluation. 
 
+#### Actions
+Tell Spark to compute results of transformations.
+- View data like .show()
+- Collect Data like .collect()
+- Write data like write.format()
 
-
-
-
-
-
-
-
-
-
-
-
-
+#### Note:
+User Defined Functions (UDFs) are not as fast when written in Python. Buil-in functions are highly optimized. UDFs written in Java or Scala are faster than Python.
 
 
 <!-- Links List -->
