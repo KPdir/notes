@@ -21,8 +21,15 @@ categories: Software, Data-Science
 
 ![Spark Components][spark_components]
 
-#### Spark Core API
+#### Spark Core
+The basic functionlity of Spark - Responsible for:
+- Distributed Processing
+- Meory Management
+- Task Scheduling
+- Fault Tolerance
+- Interfacing with storage systems
 
+For more info on other components [look here][mapr_spark_article]
 
 
 ### Spark Internals
@@ -44,7 +51,7 @@ categories: Software, Data-Science
 
 - Preferably the driver and wokkers are on the same LAN. If want to run remotely, open an RPC to driver and have it submit operations from nearby. 
 
-#### Spark Core API
+#### 
 
 
 
@@ -65,9 +72,9 @@ categories: Software, Data-Science
 
 
 
-<!-- Image List -->
+<!-- Links List -->
 [spark_components]: /notes/images/spark-components.png "Spark Componenets Image Link"
 [spark_internals_cluster_mode]: /notes/images/spark-internals-cluster-mode.png "Spark Componenets Image Link"
-
+[mapr_spark_article]: https://mapr.com/ebooks/spark/03-apache-spark-architecture-overview.html
 
 
