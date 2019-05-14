@@ -21,7 +21,7 @@ categories: Software, Data-Science
 
 ![Spark Components][spark_components]
 
-[spark_components]: https://github.com/KPdir/notes/blob/gh-pages/images/spark-components.png "Spark Componenets Image Link"
+[spark_components]: images/spark-components.png "Spark Componenets Image Link"
 
 
 
