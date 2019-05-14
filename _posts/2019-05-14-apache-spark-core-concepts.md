@@ -7,16 +7,18 @@ categories: Software, Data-Science
 ---
 
 ## Introduction
+- Spark is a fault tolerant distributed computing framework that can run large data processing jobs on compute clusters.
 
-- Talks about a scientific methodology of how to build startups which reduces their chances of failing.
+- Spark is versatile: you can do data processing, data warehousing, machine learning, stream processing (real-time analytics) and graph processing of large-out of memory datasets. 
 
-- "It builds on previous management and product development ideas, including lean manufacturing, design thinking, customer development and agile development"
+- Spark provides APIs for low level (ex: RDDs and Dataset API) and high level (ex: Data Frames API) for data manipulation. 
+
+- Spark supports Python, R, Scala and Java. Spark is written in Scala and runs on JVM. It integrates with Hive, Cassandra, HDFS, HBase
+
+- Can run locally, on-premise or in the Cloud. Can run in Standalone mode (using its own cluster manager), or can use Hadoop YARN, Amazon Mesos or IBM Bluemix.
 
 
-### The Lean Startup Method
 
-- **Entrepreneurs are everywhere:** This approach applies to startups or teams trying to bring innovative products to market within loarger corporations et.
 
-- **Entrepreneurship is management:** A startup is an institution that operates in extreme uncertainty and requires a new kind of management.
 
-- **Validated Learning:** Running frequent experiments that allow testing each element of the entrepreneurs vision. 
+
