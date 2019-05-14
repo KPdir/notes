@@ -1,12 +1,10 @@
 ---
 layout:     post
-title:      The Lean Startup
-date:       2018-08-25
-summary:    Ideas on starting and running a startup and being an entrepreneur
-categories: Entrepreneurship, business
+title:      Apache Spark Core Concepts
+date:       2019-05-14
+summary:    Notes on concepts, applications of Apache Spark
+categories: Software, Data-Science
 ---
-
-Notes on The Lean Startup book by Eric Ries.
 
 ## Introduction
 
