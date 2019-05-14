@@ -21,7 +21,7 @@ categories: Software, Data-Science
 
 ![Spark Components][spark_components]
 
-[spark_components]: images/spark-components.png "Spark Componenets Image Link"
+[spark_components]: /notes/images/spark-components.png "Spark Componenets Image Link"
 
 
 
