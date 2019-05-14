@@ -15,8 +15,11 @@ categories: Software, Data-Science
 
 - Spark supports Python, R, Scala and Java. Spark is written in Scala and runs on JVM. It integrates with Hive, Cassandra, HDFS, HBase
 
-- Can run locally, on-premise or in the Cloud. Can run in Standalone mode (using its own cluster manager), or can use Hadoop YARN, Amazon Mesos or IBM Bluemix.
+- Can run locally, on-premise or in the Cloud. Can run in Standalone mode (using its own cluster manager), or can use Hadoop YARN, Amazon Mesos or IBM Bluemix or in a Kubernetes Cluster.
 
+## Spark Components
+
+[Spark Components](/images/spark-components.png)
 
 
 
