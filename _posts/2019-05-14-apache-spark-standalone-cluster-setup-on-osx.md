@@ -37,16 +37,45 @@ export SPARK_WORKER_MEMORY=2g       # The amount of memory per worker
 export SPARK_WORKER_INSTANCES=2     # Number of worker instances
 export SPARK_WORKER_CORES=2         # Nunber of processor cores per worker
 ```
+In ```${SPARK_HOME}/conf/slaves``` add ```localhost``` to indicate that the the workers will also be started on the same local machine. 
+
 
 3) Installing Hadoop (Optional):
 See the [Installing Hadoop on Mac OsX][hadoop_on_mac] and set the respective environment variables. 
 
-4) Create a Standalone Cluster:
+4) Setup SSH:
+Since the master uses SSH to connect with slaves in the Standalone Mode, let us set up ssh keys for passwordless access.
+
+```bash
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+```
+
+5) Create a Standalone Cluster:
 Under ```${SPARK_HOME}/sbin``` run:
 ```bash
 start-master.sh
 start-slaves.sh
 ```
+If everyting worked correctly, you can see the Spark server at: ```localhost:8080```. 
+
+6) Connect the standalone cluster to a Jupyter Notebook:
+```bash
+# Install findspark and Open a Jupyter Notebook 
+pip install findspark
+jupyter notebook
+```
+
+```python
+import findspark
+findspark.init()
+
+import pyspark
+sc = pyspark.SparkContext(master='<master_url>', appName='<app_name>')
+```
+Here ```<master_url> and <app_name>``` are teh URL for the spark master shown on the spark server page at ```localhost:8080``` and the name for your application respectively. 
+
+
 
 <!-- Links -->
 [spark_concepts]: /notes/_posts/2019-05-14-apache-spark-core-concepts.md
