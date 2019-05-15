@@ -1,15 +1,15 @@
 ---
 layout:     post
-title:      Setting Up Apache Spark Standalone Cluster on Mac OsX
+title:      Setting Up Apache Spark Standalone Cluster on Mac OSX
 date:       2019-05-14
-summary:    Instructions for setting up a local Apache Spark Standalone Cluster on Mac OsX 
+summary:    Instructions for setting up a local Apache Spark Standalone Cluster on Mac OSX 
 categories: Software, Data-Science
 ---
 
 ## Introduction
 Notes on what Apache Spark is, its internals and workings is at [Apache Spark Core Concepts][spark_concepts]. 
 
-This article details the install of Apache Spark (2.4.3) and setup of a Standalone-Cluster on Mac OsX.
+This article details the install of Apache Spark (2.4.3) and setup of a Standalone-Cluster on Mac OSX.
 
 ## Setup
 1) Install Java:
@@ -41,7 +41,7 @@ In ```${SPARK_HOME}/conf/slaves``` add ```localhost``` to indicate that the the 
 
 
 3) Installing Hadoop (Optional):
-See the [Installing Hadoop on Mac OsX][hadoop_on_mac] and set the respective environment variables. 
+See the [Installing Hadoop on Mac OSX][hadoop_on_mac] and set the respective environment variables. 
 
 4) Setup SSH:
 Since the master uses SSH to connect with slaves in the Standalone Mode, let us set up ssh keys for passwordless access.
