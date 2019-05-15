@@ -7,9 +7,9 @@ categories: Software, Data-Science
 ---
 
 ## Introduction
-Notes on what Apache Spark is, its internals and workings is at [Apache Spark Core Concepts][spark_concepts]
+Notes on what Apache Spark is, its internals and workings is at [Apache Spark Core Concepts][spark_concepts]. 
 
-This article details the setup of a Standalone-Cluster on Mac OsX.
+This article details the install of Apache Spark (2.4.3) and setup of a Standalone-Cluster on Mac OsX.
 
 ## Setup
 1) Install Java:
@@ -28,8 +28,15 @@ brew install apache-spark
 ```
 #### Set Spark Environment Variables
 ```bash
-export SPARK_HOME=/usr/local/Cellar/apache-spark/2.4.3/libexec/
+export SPARK_HOME=/usr/local/Cellar/apache-spark/2.4.3/libexec
+export PATH=$PATH:$SPARK_HOME/bin
 ```
+In ```${SPARK_HOME}/conf``` add the following:
+```bash
+export SPARK_WORKER_MEMORY=2g       # The amount of memory per worker
+export SPARK_WORKER_INSTANCES=2     # Number of worker instances
+```
+
 
 <!-- Links -->
 [spark_concepts]: /notes/_posts/2019-05-14-apache-spark-core-concepts.md
