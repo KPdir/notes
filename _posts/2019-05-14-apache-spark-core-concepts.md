@@ -87,6 +87,15 @@ Tell Spark to compute results of transformations.
 User Defined Functions (UDFs) are not as fast when written in Python. Buil-in functions are highly optimized. UDFs written in Java or Scala are faster than Python.
 
 
+### RDDs
+- Support for in-memory data storage
+- Fault Tolerance by tracking transformations applied.
+- Transformations: Create a new RDD by changing original through mapping filtering etc. 
+- Actions: Like counts measure but do not change original data. 
+- Are immutable
+- Chain of transformations - RDD1 ... RDDn are logged so it can be repeated in case of data loss or failure of cluster node. 
+- Can improve performance of iterative processes due to caching. 
+
 <!-- Links List -->
 [spark_components]: /notes/images/spark-components.png "Spark Componenets Image Link"
 [spark_internals_cluster_mode]: /notes/images/spark-internals-cluster-mode.png "Spark Componenets Image Link"
