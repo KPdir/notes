@@ -75,7 +75,7 @@ sc = pyspark.SparkContext(master='<master_url>', appName='<app_name>')
 ```
 Here ```<master_url> and <app_name>``` are teh URL for the spark master shown on the spark server page at ```localhost:8080``` and the name for your application respectively. 
 
-
+$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
 
 <!-- Links -->
 [spark_concepts]: /notes/_posts/2019-05-14-apache-spark-core-concepts.md
